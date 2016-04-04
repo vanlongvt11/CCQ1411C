@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<meta charset=utf-8>
+	<style>
+	*{
+	padding: 0;
+	margin:0;
+	}
+	body{
+	padding:30px;
+	}
+	nav, h1{
+	margin:10px;	
+	float:left ;
+	width:100%;
+	}
+	li{
+	list-style:none;
+	}
+	.h_nav li{
+	display:inline-block;
+	width:100px;
+	border:1px solid;
+	background:#eee;
+	float:left ;
+	}
+	.h_nav a{
+	text-decoration:none;
+	background-color:#asd999;
+	display:block;
+	height:30px;
+	text-align:center;
+	padding:5px 10px;
+	}
+	.h_nav a:hover{
+	background:#ee11aa;
+	color:#fff;
+	}
+	.v_nav li{
+	width:100px;
+	border:1px solid;
+	background:#eee;
+	}
+	.v_nav a{
+	text-decoration:none;
+	background-color:#asd999;
+	display:block;
+	height:30px;
+	text-align:center;
+	padding:5px 0;
+	}
+	.v_nav a:hover{
+	background:#ee11aa;
+	color:#fff;
+	}
+	.drop_nav li{
+	width:150px;
+	float:left ;
+	border:1px soild;	
+	}
+	.drop_nav a{
+	text-decoration:none;
+	background-color:#aaa;
+	display:block;
+	height:30px;
+	text-align:center;
+	padding:5px 10px;
+	}
+	.drop_nav a:hover{
+	background:#ee11aa;
+	color:#fff;
+	}
+	.drop_nav li ul{
+	display:none;
+	}
+	.drop_nav li:hover ul{
+	display:block;
+	}
+	.fly_nav li{
+	width:150px;
+	border:1px solid;
+	position:relative;
+	}
+	.fly_nav a{
+	text-decoration:none;
+	background-color:#asd999;
+	display:block;
+	height:30px;
+	padding:5px 10px;
+	}
+	.fly_nav a:hover{
+	background:#ee11aa;
+	color:#fff;
+	}
+	.fly_nav li ul{
+	display:none;
+	position:absolute;
+	left:150px;
+	top:0;
+	}
+	.fly_nav li:hover ul{
+	display:block;
+	}
+	</style>
+</head>
+<body>
+ <h1>Horizontal navigation bar </h1>
+ <nav class="h_nav">
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">New</a></li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#">About</a></li>
+	<h1>Vertical navigation bar </h1>
+	</ul>
+</nav>
+<nav class="v_nav">
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">New</a></li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#">About</a></li>
+	</ul>
+</nav>
+<h1>Horizontal navigation bar </h1>
+<nav class="drop_nav">
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">New</a>
+		<ul>
+			<li><a href="#">Item1</a></li>
+			<li><a href="#">Item2</a></li>
+			<li><a href="#">Item3</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#">About</a></li>
+	</ul>
+</nav>
+<h1>Flyout navigation bar </h1>
+<nav class="fly_nav">
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">New</a>
+		<ul>
+			<li><a href="#">Item1</a></li>
+			<li><a href="#">Item2</a></li>
+			<li><a href="#">Item3</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#">About</a></li>
+	</ul>
+</nav>
+</body>
+</html>
